@@ -46,7 +46,7 @@ export class AuthService {
     ).pipe(
       // la ventaja del map que si se aparece un error el map nunca se dispara
       map(resp => {
-        console.log('entro en el mapa del RXJS');
+        // console.log('entro en el mapa del RXJS');
         // se ejecuta solo si la función tiene exito , si el return trae un error el map nunca se va ejecutar
         this.guardarToken(resp['idToken']);
         return resp;
@@ -78,7 +78,7 @@ export class AuthService {
     ).pipe(
       // la ventaja del map que si se aparece un error el map nunca se dispara
       map( resp => {
-        console.log('entro en el mapa del RXJS');
+        // console.log('entro en el mapa del RXJS');
         // se ejecuta solo si la función tiene exito , si el return trae un error el map nunca se va ejecutar
         this.guardarToken(resp['idToken']);
         return resp;
